@@ -1,0 +1,28 @@
+﻿<Window x:Class="ConnectionStringTester.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Connection String Tester" Height="290" Width="728" ResizeMode="NoResize" Icon="/ConnectionStringTester;component/dialog-clean.png">
+    <Grid>
+        <Rectangle Margin="0,0,0,0">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                    <GradientStop Color="#eee" Offset="0.0" />
+                    <GradientStop Color="White" Offset="1.0" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Margin="0,207,0,0" Fill="#FF45B487">
+        </Rectangle>
+        <Label Content="Connection String" Height="28" HorizontalAlignment="Left" Margin="12,16,0,0" Name="lblConnectionString" VerticalAlignment="Top" Cursor="Hand" Width="105" MouseLeftButtonDown="lblConnectionString_MouseLeftButtonDown" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="123,18,0,0" Name="txtConnectionString" VerticalAlignment="Top" Width="576" KeyUp="txtConnectionString_KeyUp" />
+        <Label Content="Data Source" Height="28" HorizontalAlignment="Left" Margin="12,64,0,0" Name="lblDataSource" VerticalAlignment="Top" Cursor="Hand" Width="105" MouseLeftButtonDown="lblDataSource_MouseLeftButtonDown" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="123,64,0,0" Name="txtDataSource" VerticalAlignment="Top" Width="576" KeyUp="txtDataSource_KeyUp" />
+        <Label Content="Initial Catalog" Height="28" HorizontalAlignment="Left" Margin="12,96,0,0" Name="lblInitialCatalog" VerticalAlignment="Top" Cursor="Hand" Width="105" MouseLeftButtonDown="lblInitialCatalog_MouseLeftButtonDown" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="123,98,0,0" Name="txtInitialCatalog" VerticalAlignment="Top" Width="576" KeyUp="txtInitialCatalog_KeyUp" />
+        <Label Content="User" Height="28" HorizontalAlignment="Left" Margin="12,129,0,0" Name="lblUser" VerticalAlignment="Top" Cursor="Hand" Width="105" MouseLeftButtonDown="lblUser_MouseLeftButtonDown" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="123,131,0,0" Name="txtUser" VerticalAlignment="Top" Width="576" KeyUp="txtUser_KeyUp" />
+        <Label Content="Password" Height="28" HorizontalAlignment="Left" Margin="12,162,0,0" Name="lblPassword" VerticalAlignment="Top" Cursor="Hand" Width="105" MouseLeftButtonDown="lblPassword_MouseLeftButtonDown" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="123,164,0,0" Name="txtPassword" VerticalAlignment="Top" Width="576" KeyUp="txtPassword_KeyUp" />
+        <Button Content="Test" Height="30" HorizontalAlignment="Left" Margin="556,220,0,0" Name="btnTest" VerticalAlignment="Top" Width="143" Click="btnTest_Click" />
+    </Grid>
+</Window>
